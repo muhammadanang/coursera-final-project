@@ -3,36 +3,63 @@
 <head>
 <title>Final Project</title>
 <meta charset="utf-8">
+<style>
+
+.heart {
+position: absolute;
+margin: auto;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+background-color: pink;
+width: 50px;
+height: 50px;
+transform: rotate(-45deg);
+animation-name: beat;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}
+.heart:after {
+background-color: pink;
+content: "";
+border-radius: 50%;
+position: absolute;
+width: 50px;
+height: 50px;
+top: 0;
+left: 25px;
+}
+.heart:before {
+background-color: pink;
+content: "";
+border-radius: 50%;
+position: absolute;
+width: 50px;
+height: 50px;
+top: -25px;
+left: 0;
+}
+
+@keyframes beat {
+0% {
+transform: scale(1) rotate(-45deg)
+}
+50% {
+transform: scale(0.6) rotate(-45deg)
+}
+}
+
+</style>
 </head>
 <body>
 <header><h1>Muhammad Anang Mahrub</h1></header>
 <nav>
-<a href="">One</a>
-<a href="">Two</a>
-<a href="">Three</a>
-<a href="">431</a></nav>
-<section>
-<h2>Favorite Foods</h2>
-<ul>
-<li>Mango</li>
-<li>Strawberry</li>
-<li>Banana</li>
-<li>Cherry</li>
-</ul></section>
-<section>
-<h2>Achievements</h2>
-<label>Progress in this course (100%)</label>
-<progress value="100" max="100">100%</progress><br>
-<label>Progress in the Specialization capstone (20%)</label>
-<progress value="20" max="100">20%</progress><br>
-<label>Progress in life goals (30%)</label>
-<progress value="30" max="100">30%</progress></section>
-<section>
-<h2>More About Me</h2>
-<details><summary>My Childhood</summary>
-<p>Its About Me</p></details></section>
-<footer>
-<p><img src="http://www.intro-webdesign.com/images/newlogo.png" alt="Web Design Logo">This page was created by Muhammad Anang Mahrub and Colleen van Lent. 
-To learn more about web design, <a href="http://www.intro-webdesign.com" target="_blank">visit Intro to Web Design</a>.</p></footer>
+<a href="https://www.feynmanlectures.caltech.edu/">One</a>
+<a href="https://www.linkedin.com/in/muhammad-anang-mahrub-1262601a7/">Two</a>
+<a href="https://www.freecodecamp.org/muhammadanang">Three</a>
+<a href="https://www.hackerrank.com/">431</a></nav>
+<div class="back"></div>
+<div class="heart"></div>
 </body>
 </html>
